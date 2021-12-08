@@ -31,6 +31,7 @@ public class PongGame extends JPanel implements Runnable, KeyListener {
         pongFrame = new MyFrame();
         pongFrame.add(this);
         pongFrame.addKeyListener(this);
+        pongFrame.setFocusable(true);
         p1Points = 0;
         p2Points = 0;
         tile1 = new Float(5,1080/2-100);
